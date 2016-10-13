@@ -51,8 +51,8 @@ RUN set -ex \
 		gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; \
 	done
 
-ENV NODE_VERSION latest
-ENV NPM_VERSION latest
+ENV NODE_VERSION 4.6.0
+ENV NPM_VERSION 2.15.11
 
 RUN curl -SLO "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION-linux-x64.tar.gz" \
 	&& curl -SLO "https://nodejs.org/dist/v$NODE_VERSION/SHASUMS256.txt.asc" \
